@@ -156,10 +156,10 @@ const store = new Vuex.Store({ ...options })
 
   Most commonly used in plugins. [Details](plugins.md)
 
-- **`registerModule(path: string | Array<string>, module: Module)`**
+- **`registerModule(path: string | Array<string>, module: Module|Function): Module|Function`**
 
   Register a dynamic module. [Details](modules.md#dynamic-module-registration)
-
+  
 - **`unregisterModule(path: string | Array<string>)`**
 
   Unregister a dynamic module. [Details](modules.md#dynamic-module-registration)

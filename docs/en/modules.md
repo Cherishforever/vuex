@@ -236,6 +236,9 @@ store.registerModule('myModule', {
 store.registerModule(['nested', 'myModule'], {
   // ...
 })
+
+// Lazy loading store modules
+store.registerModule('myModule', () => import('path/to/module.js'))
 ```
 
 The module's state will be exposed as `store.state.myModule` and `store.state.nested.myModule`.
